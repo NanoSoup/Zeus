@@ -37,12 +37,10 @@ class Kernel
             new ACF(),
             new Dashboard(),
             new Duplicate(),
-            new Images(),
             new Manifest(),
             new OptimiseWP(),
             new TinyMCE(),
             new Twig(),
-            new UserPermissions(),
             new Yoast()
         ];
     }
