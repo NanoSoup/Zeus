@@ -6,12 +6,10 @@ use Zeus\Wordpress\ACF;
 use Zeus\Wordpress\Dashboard;
 use Zeus\Wordpress\Duplicate;
 use Zeus\Wordpress\GravityForms;
-use Zeus\Wordpress\Images;
 use Zeus\Wordpress\Manifest;
 use Zeus\Wordpress\OptimiseWP;
 use Zeus\Wordpress\TinyMCE;
 use Zeus\Wordpress\Twig;
-use Zeus\Wordpress\UserPermissions;
 use Zeus\Wordpress\Yoast;
 
 /**
