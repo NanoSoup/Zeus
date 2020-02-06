@@ -1,6 +1,6 @@
 <?php
 
-namespace Zeus\Wordpress;
+namespace Zeus\GravityForms;
 
 use GFAPI;
 use Timber\User;

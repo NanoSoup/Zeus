@@ -5,7 +5,7 @@ namespace Zeus;
 use Zeus\Wordpress\ACF;
 use Zeus\Wordpress\Dashboard;
 use Zeus\Wordpress\Duplicate;
-use Zeus\Wordpress\GravityForms;
+use Zeus\GravityForms\GravityForms;
 use Zeus\Wordpress\Manifest;
 use Zeus\Wordpress\OptimiseWP;
 use Zeus\Wordpress\TinyMCE;
@@ -22,7 +22,7 @@ class Kernel
      */
     public function __construct()
     {
-        $this->registerClasses();
+        self::registerClasses();
     }
 
     /**
