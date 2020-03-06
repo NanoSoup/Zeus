@@ -19,10 +19,8 @@ class ACF
         add_filter('allowed_block_types', [$this,  'allowedBlocks']);
 
         // add action for logged-in users
-        add_action( "wp_ajax_acf/ajax/check_screen", [$this,  'allowedBlocks2'], 1);
-
-        add_action( "wp_ajax_nopriv_acf/ajax/check_screen", [$this,  'allowedBlocks2'], 1);
-
+        add_action( "wp_ajax_acf/ajax/check_screen", [$this,  'allowedBlocks'], 1);
+        add_action( "wp_ajax_nopriv_acf/ajax/check_screen", [$this,  'allowedBlocks'], 1);
         add_filter('block_categories', [$this, 'registerCustomBlockCats'], 10, 1);
     }
 
