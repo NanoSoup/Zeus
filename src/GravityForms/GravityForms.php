@@ -1,6 +1,6 @@
 <?php
 
-namespace Zeus\GravityForms;
+namespace NanoSoup\Zeus\GravityForms;
 
 use GFAPI;
 use Timber\User;

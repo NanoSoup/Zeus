@@ -1,10 +1,10 @@
 <?php
 
-namespace Zeus\Wordpress;
+namespace NanoSoup\Zeus\Wordpress;
 
-use Zeus\Account\BigLogin;
-use Zeus\Products\Products;
-use Zeus\SampleBasket\SampleBasket;
+use NanoSoup\Zeus\Account\BigLogin;
+use NanoSoup\Zeus\Products\Products;
+use NanoSoup\Zeus\SampleBasket\SampleBasket;
 use HelloNico\Twig\DumpExtension;
 use Timber\Timber;
 use Twig\Loader\FilesystemLoader;
