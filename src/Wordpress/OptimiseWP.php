@@ -1,6 +1,6 @@
 <?php
 
-namespace Zeus\Wordpress;
+namespace NanoSoup\Zeus\Wordpress;
 
 use WP_Error;
 

@@ -1,16 +1,16 @@
 <?php
 
-namespace Zeus;
+namespace NanoSoup\Zeus;
 
-use Zeus\Wordpress\ACF;
-use Zeus\Wordpress\Dashboard;
-use Zeus\Wordpress\Duplicate;
-use Zeus\GravityForms\GravityForms;
-use Zeus\Wordpress\Manifest;
-use Zeus\Wordpress\OptimiseWP;
-use Zeus\Wordpress\TinyMCE;
-use Zeus\Wordpress\Twig;
-use Zeus\Wordpress\Yoast;
+use NanoSoup\Zeus\Wordpress\ACF;
+use NanoSoup\Zeus\Wordpress\Dashboard;
+use NanoSoup\Zeus\Wordpress\Duplicate;
+use NanoSoup\Zeus\GravityForms\GravityForms;
+use NanoSoup\Zeus\Wordpress\Manifest;
+use NanoSoup\Zeus\Wordpress\OptimiseWP;
+use NanoSoup\Zeus\Wordpress\TinyMCE;
+use NanoSoup\Zeus\Wordpress\Twig;
+use NanoSoup\Zeus\Wordpress\Yoast;
 
 /**
  * Class Kernel
