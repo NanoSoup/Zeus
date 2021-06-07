@@ -17,6 +17,7 @@ class ACF
         add_action('after_setup_theme', [$this, 'setupOptionsPage']);
         add_action('acf/init', [$this, 'registerGoogleMapsKey']);
         add_filter('allowed_block_types', [$this,  'allowedBlocks']);
+        add_action('admin_menu', [$this, 'reusableBlocksMenu']);
 
         // add action for logged-in users
         add_action( "wp_ajax_acf/ajax/check_screen", [$this,  'allowedBlocks'], 1);
@@ -94,6 +95,7 @@ class ACF
         $blocks = acf_get_block_types();
 
         $allowed = [
+            'core/block',
             'gravityforms/block'
         ];
 
@@ -104,5 +106,13 @@ class ACF
         }
 
         return $allowed;
+    }
+
+    /**
+     * Adds "Reusable Blocks" menu to admin
+     */
+    public static function reusableBlocksMenu()
+    {
+        add_menu_page('Reusable Blocks', 'Reusable Blocks', 'edit_posts', 'edit.php?post_type=wp_block', '', 'dashicons-editor-table', 22);
     }
 }
