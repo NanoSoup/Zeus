@@ -24,7 +24,6 @@ class OptimiseWP
         remove_action('wp_head', 'wp_shortlink_wp_head');
         add_action('wp_default_scripts', [$this, 'removeJquery']);
         add_action('login_enqueue_scripts', [$this, 'adminLogo']);
-        add_filter('login_redirect', [$this, 'adminRedirect']);
         add_action('wp_logout', [$this, 'unlog']);
         add_filter('xmlrpc_enabled', '__return_false');
         add_filter('rest_endpoints', [$this, 'disableRestApi']);
@@ -44,13 +43,6 @@ class OptimiseWP
         if (count(array_intersect($roles, $user->roles)) <= 0) {
             add_filter('show_admin_bar', '__return_false');
         }
-    }
-
-    /**
-     * @return string
-     */
-    public function adminRedirect() {
-        return '/account/dashboard/';
     }
 
     /**
